@@ -1,0 +1,157 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #cffcf1,
+    #cffcf1,
+    #defafe
+  );
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: linear-gradient(
+      to rigth,
+      #ffffff,
+      #cffcf1,
+      #cffcf1,
+      #defafe
+    );
+  }
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .content-container {
+    max-width: 1142px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.timer-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 250px;
+  width: 320px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+@media (min-width: 576px) {
+  .timer-container {
+    width: 400px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .timer-container {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .timer-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+.timer-sec-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 25px;
+  color: #0f172a;
+}
+.sec-title {
+  font-size: 18px;
+  color: #00d9f5;
+  margin: 0px;
+}
+.sec-label {
+  font-size: 12px;
+  color: #0f172a;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .timer-sec-container {
+    height: 180px;
+    width: 180px;
+  }
+  .sec-title {
+    font-size: 35px;
+  }
+  .sec-label {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+.toggleTimer {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+}
+.button-label-container {
+  display: flex;
+  align-items: center;
+}
+
+.set-limit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.increment-container {
+  display: flex;
+}
+.timer-reset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+.set-timer {
+  background-color: #00d9f5;
+  height: 40px;
+  width: 70px;
+  font-size: 20px;
+  border-radius: 8px;
+  padding-top: 6px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.increment {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0f172a;
+}
